@@ -24,4 +24,4 @@ The end goal is to train the CNN-LSTM model using a moving window _(5 seconds??)
 - Figure out how to kill the recording threads gracefully
 - Play some games!
 - Create training/validation/test datasets using video frames as input and key-press-sets as output
-- Speed up model prediction? (currently)
+- Speed up model prediction?
