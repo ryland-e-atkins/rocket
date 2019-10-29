@@ -102,3 +102,9 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# captures folder (don't want people watching my poor playing skills ;)
+captures/*
+
+# Workspace settings
+.vscode/
