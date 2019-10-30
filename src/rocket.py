@@ -2,7 +2,6 @@ import os
 
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "0"
 
-
 import numpy as np
 import time
 
@@ -15,7 +14,7 @@ from tensorflow.keras.layers import LSTM
 from tensorflow.keras.layers import Dense
 
 
-input_shape = (5, 720, 1280, 4)
+input_shape = (4, 720, 1280, 4)
 
 model = Sequential()
 model.add(
@@ -30,16 +29,16 @@ model.compile(loss="binary_crossentropy", optimizer="adam", metric=["accuracy"])
 
 print("starting...")
 sum_time = 0
-for i in range(100):
+for i in range(10):
 
     start_time = time.time()
 
-    x = [[np.ones((5, 720, 1280, 4))]]
+    x = [[np.ones(input_shape)]]
     model.predict(x)
     iter_time = time.time() - start_time
     print("iteration {0}: {1}".format(i, iter_time))
     sum_time += iter_time
 
 
-print("\naverage prediction time: {0}".format(sum_time / 100))
+print("\naverage prediction time: {0}".format(sum_time / 10))
 
