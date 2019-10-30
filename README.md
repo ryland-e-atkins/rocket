@@ -25,3 +25,4 @@ The end goal is to train the CNN-LSTM model using a moving window _(5 seconds??)
 - Play some games!
 - Create training/validation/test datasets using video frames as input and key-press-sets as output
 - Speed up model prediction?
+- Make a better README
