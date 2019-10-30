@@ -20,7 +20,7 @@ The end goal is to train the CNN-LSTM model using a moving window _(5 seconds??)
 
 ### TODO
 
-- ~~Cut down requirements.txt **IT'S SO LONG**~~not right now
+- ~~Cut down requirements.txt **IT'S SO LONG**~~ not right now
 - ~~Figure out how to kill the recording threads gracefully~~
 - Play some games!
 - Create training/validation/test datasets using video frames as input and key-press-sets as output
